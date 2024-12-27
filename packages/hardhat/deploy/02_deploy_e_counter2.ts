@@ -10,7 +10,7 @@ import { DeployFunction } from "hardhat-deploy/types";
  */
 const deployEncryptedCounter2: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   /*
-    On localhost, the deployer account is the one that comes with Hardhat, which is already funded.
+    On localhost, the deployer account is the one that comes wih Hardhat, which is already funded.
 
     When deploying to live networks (e.g `yarn deploy --network sepolia`), the deployer account
     should have sufficient balance to pay for the gas fees for contract creation.
