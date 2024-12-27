@@ -2421,6 +2421,7 @@ __metadata:
     eslint-config-next: ^14.2.15
     eslint-config-prettier: ^8.10.0
     eslint-plugin-prettier: ^5.2.1
+    fhevmjs: ^0.6.2
     next: ^14.2.11
     next-nprogress-bar: ^2.3.13
     next-themes: ^0.3.0
@@ -2925,6 +2926,13 @@ __metadata:
   version: 1.0.2
   resolution: "@types/estree@npm:1.0.2"
   checksum: aeedb1b2fe20cbe06f44b99b562bf9703e360bfcdf5bb3d61d248182ee1dd63500f2474e12f098ffe1f5ac3202b43b3e18ec99902d9328d5374f5512fa077e45
+  languageName: node
+  linkType: hard
+
+"@types/glob-to-regexp@npm:^0.4.4":
+  version: 0.4.4
+  resolution: "@types/glob-to-regexp@npm:0.4.4"
+  checksum: be9c924d664592a16129c825aa392365335ce455c34e1c9d3f6dd8b45371088bb5d4a45bbb576559f2b63d4f8bcf464cbd5baafb08cdf89b71d3b6a79356b747
   languageName: node
   linkType: hard
 
@@ -4658,6 +4666,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bigint-buffer@npm:^1.1.5":
+  version: 1.1.5
+  resolution: "bigint-buffer@npm:1.1.5"
+  dependencies:
+    bindings: ^1.3.0
+    node-gyp: latest
+  checksum: d010c9f57758bcdaccb435d88b483ffcc95fe8bbc6e7fb3a44fb5221f29c894ffaf4a3c5a4a530e0e7d6608203c2cde9b79ee4f2386cd6d4462d1070bc8c9f4e
+  languageName: node
+  linkType: hard
+
 "binary-extensions@npm:^2.0.0":
   version: 2.2.0
   resolution: "binary-extensions@npm:2.2.0"
@@ -4665,7 +4683,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bindings@npm:^1.4.0, bindings@npm:^1.5.0":
+"bindings@npm:^1.3.0, bindings@npm:^1.4.0, bindings@npm:^1.5.0":
   version: 1.5.0
   resolution: "bindings@npm:1.5.0"
   dependencies:
@@ -5409,6 +5427,13 @@ __metadata:
     table-layout: ^1.0.2
     typical: ^5.2.0
   checksum: 8261d4e5536eb0bcddee0ec5e89c05bb2abd18e5760785c8078ede5020bc1c612cbe28eb6586f5ed4a3660689748e5aaad4a72f21566f4ef39393694e2fa1a0b
+  languageName: node
+  linkType: hard
+
+"commander@npm:^11.0.0":
+  version: 11.1.0
+  resolution: "commander@npm:11.1.0"
+  checksum: fd1a8557c6b5b622c89ecdfde703242ab7db3b628ea5d1755784c79b8e7cb0d74d65b4a262289b533359cd58e1bfc0bf50245dfbcd2954682a6f367c828b79ef
   languageName: node
   linkType: hard
 
@@ -7338,6 +7363,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fetch-mock@npm:^11.1.3":
+  version: 11.1.5
+  resolution: "fetch-mock@npm:11.1.5"
+  dependencies:
+    "@types/glob-to-regexp": ^0.4.4
+    dequal: ^2.0.3
+    glob-to-regexp: ^0.4.1
+    is-subset: ^0.1.1
+    regexparam: ^3.0.0
+  peerDependenciesMeta:
+    node-fetch:
+      optional: true
+  checksum: 3561c82ee6fe3125eb644ad757cb65ef6372642a4843e42c90a60751765908c608cfc9d56356e1105352f83271fd607f220916de0e57ebaebc03fbd5f0d9e8f9
+  languageName: node
+  linkType: hard
+
 "fhevm-contracts@npm:^0.2.1":
   version: 0.2.1
   resolution: "fhevm-contracts@npm:0.2.1"
@@ -7357,6 +7398,25 @@ __metadata:
     extra-bigint: ^1.1.18
     sqlite3: ^5.1.7
   checksum: 65502ca5d426e109f3ccf75f23a31ab90e75aba5dd02f83ed2b703334c26f9be87bbdf82c06006827b7388c596ef4694d182aeeb595d24f46cfce560cfb0e83f
+  languageName: node
+  linkType: hard
+
+"fhevmjs@npm:^0.6.2":
+  version: 0.6.2
+  resolution: "fhevmjs@npm:0.6.2"
+  dependencies:
+    bigint-buffer: ^1.1.5
+    commander: ^11.0.0
+    fetch-mock: ^11.1.3
+    keccak: ^3.0.4
+    node-tfhe: ^0.9.1
+    node-tkms: ^0.9.0
+    tfhe: ^0.9.1
+    tkms: ^0.9.0
+    wasm-feature-detect: ^1.8.0
+  bin:
+    fhevm: bin/fhevm.js
+  checksum: 02f4a8da42ef0ed1641659959c6754c3e8340becb43e7cd2ec967313d5bb598c785a5290c4be98f44fc48698883dc00b9b49397aee679e7170b3f65f1ff34d67
   languageName: node
   linkType: hard
 
@@ -7851,6 +7911,13 @@ __metadata:
   dependencies:
     is-glob: ^4.0.3
   checksum: c13ee97978bef4f55106b71e66428eb1512e71a7466ba49025fc2aec59a5bfb0954d5abd58fc5ee6c9b076eef4e1f6d3375c2e964b88466ca390da4419a786a8
+  languageName: node
+  linkType: hard
+
+"glob-to-regexp@npm:^0.4.1":
+  version: 0.4.1
+  resolution: "glob-to-regexp@npm:0.4.1"
+  checksum: e795f4e8f06d2a15e86f76e4d92751cf8bbfcf0157cea5c2f0f35678a8195a750b34096b1256e436f0cebc1883b5ff0888c47348443e69546a5a87f9e1eb1167
   languageName: node
   linkType: hard
 
@@ -8920,6 +8987,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"is-subset@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "is-subset@npm:0.1.1"
+  checksum: 97b8d7852af165269b7495095691a6ce6cf20bdfa1f846f97b4560ee190069686107af4e277fbd93aa0845c4d5db704391460ff6e9014aeb73264ba87893df44
+  languageName: node
+  linkType: hard
+
 "is-symbol@npm:^1.0.2, is-symbol@npm:^1.0.3":
   version: 1.0.4
   resolution: "is-symbol@npm:1.0.4"
@@ -9269,7 +9343,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"keccak@npm:^3.0.0, keccak@npm:^3.0.2, keccak@npm:^3.0.3":
+"keccak@npm:^3.0.0, keccak@npm:^3.0.2, keccak@npm:^3.0.3, keccak@npm:^3.0.4":
   version: 3.0.4
   resolution: "keccak@npm:3.0.4"
   dependencies:
@@ -10563,6 +10637,20 @@ __metadata:
   version: 2.0.18
   resolution: "node-releases@npm:2.0.18"
   checksum: ef55a3d853e1269a6d6279b7692cd6ff3e40bc74947945101138745bfdc9a5edabfe72cb19a31a8e45752e1910c4c65c77d931866af6357f242b172b7283f5b3
+  languageName: node
+  linkType: hard
+
+"node-tfhe@npm:^0.9.1":
+  version: 0.9.1
+  resolution: "node-tfhe@npm:0.9.1"
+  checksum: fde45a0b76d4c00d779218142a902be6c641024ce63b40e2e7c7e87b07382ab5451ad00cac6672e1d8fc630a7caf6a5832eaf27cd8c1e2cfff977f6953c96e1f
+  languageName: node
+  linkType: hard
+
+"node-tkms@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "node-tkms@npm:0.9.0"
+  checksum: e6c26b58df5b03236b4dc9f0203d0a18183056172e45f8f8b94b99b8906b9c5beff02db5b63b2e57eca07ab3ec725475d69427cb762038b5ae354f56aa81e403
   languageName: node
   linkType: hard
 
@@ -12005,6 +12093,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"regexparam@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "regexparam@npm:3.0.0"
+  checksum: c8649af1538ccc12b5c5d250525f61bd370227dce41f4fb908433a9651e18b7be21dd8f8518c322dd9ebd75f7caaaea4921e374c39a469c11d4f9d0c738043e0
+  languageName: node
+  linkType: hard
+
 "repeat-string@npm:^1.0.0":
   version: 1.6.1
   resolution: "repeat-string@npm:1.6.1"
@@ -13288,6 +13383,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tfhe@npm:^0.9.1":
+  version: 0.9.1
+  resolution: "tfhe@npm:0.9.1"
+  checksum: 594fe66a23e51fa2acd13fad4b7c725fb16024b2a0e839fff03b572a9007de5e2aa0f9965abe6a6a77eb82ff51bb78ad167ae6706ad965109cfd28188701abe8
+  languageName: node
+  linkType: hard
+
 "thenify-all@npm:^1.0.0":
   version: 1.6.0
   resolution: "thenify-all@npm:1.6.0"
@@ -13335,6 +13437,13 @@ __metadata:
   version: 1.0.3
   resolution: "tiny-warning@npm:1.0.3"
   checksum: da62c4acac565902f0624b123eed6dd3509bc9a8d30c06e017104bedcf5d35810da8ff72864400ad19c5c7806fc0a8323c68baf3e326af7cb7d969f846100d71
+  languageName: node
+  linkType: hard
+
+"tkms@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "tkms@npm:0.9.0"
+  checksum: 377510243ecbbd9a639a8c95ad079b5cc740ff0eb7ec4210a5145daa4eeb097111aecc306d7ed44ae84cf6464e20ab02fc9639b2d8452b71905ad4bf3eff662b
   languageName: node
   linkType: hard
 
@@ -14309,6 +14418,13 @@ __metadata:
     typescript:
       optional: true
   checksum: 22cd61928b73579e2bfbf63da21fd55b565acc351802978b73ab40b77480c631d21a5188c083046728de851969898bb942ee164b46b83ac8a95e11e9ac2ec6a6
+  languageName: node
+  linkType: hard
+
+"wasm-feature-detect@npm:^1.8.0":
+  version: 1.8.0
+  resolution: "wasm-feature-detect@npm:1.8.0"
+  checksum: 5972a95fb4064d23d828cd23e70f59ebf612db0fff2209365cc47190886328af570d1d40db00c8d41982fef2b446a8f143cf292482bbf3e1214e60b292c78ccc
   languageName: node
   linkType: hard
 

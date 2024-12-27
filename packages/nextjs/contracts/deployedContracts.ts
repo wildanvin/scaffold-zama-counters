@@ -169,6 +169,35 @@ const deployedContracts = {
       ],
       inheritedFunctions: {},
     },
+    EncryptedCounter2: {
+      address: "0x274afbBBbA1c3b7feaBb0D2D6067375088092D10",
+      abi: [
+        {
+          inputs: [],
+          stateMutability: "nonpayable",
+          type: "constructor",
+        },
+        {
+          inputs: [
+            {
+              internalType: "einput",
+              name: "amount",
+              type: "bytes32",
+            },
+            {
+              internalType: "bytes",
+              name: "inputProof",
+              type: "bytes",
+            },
+          ],
+          name: "incrementBy",
+          outputs: [],
+          stateMutability: "nonpayable",
+          type: "function",
+        },
+      ],
+      inheritedFunctions: {},
+    },
   },
 } as const;
 
